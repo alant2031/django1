@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = set enviroment
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -76,6 +76,8 @@ WSGI_APPLICATION = "django1.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
+# TODO: Configurar Posgres para produção no Heroku
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
